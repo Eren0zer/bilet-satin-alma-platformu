@@ -15,9 +15,8 @@ Arayüz Pico.css ile sade tutuldu. Router tek dosyadan (public/index.php) çalı
 ## İçindekiler
 
 * [Özellikler](#özellikler)
-* [Eklenen İlave Özellikler](#eklenen-ilave-özellikler)
+* [Eklenen İlave Özellikler](#eklenen-ilave-ozellikler)
 * [Teknolojiler](#teknolojiler)
-* [Dizin Yapısı](#dizin-yapısı)
 * [Gereksinimler](#gereksinimler)
 * [Kurulum – Docker](#kurulum--docker)
 * [Kurulum – XAMPP/Apache](#kurulum--xamppapache)
@@ -30,6 +29,8 @@ Arayüz Pico.css ile sade tutuldu. Router tek dosyadan (public/index.php) çalı
 * [JSON Uç Noktaları](#json-uç-noktaları)
 * [Geliştirme İpuçları](#geliştirme-ipuçları)
 * [Sorun Giderme](#sorun-giderme)
+* [Web Sitesinden Görüntüler](#web-sitesinden-görüntüler)
+* [Dizin Yapısı](#dizin-yapısı)
 * [Lisans](#lisans)
 
 ---
@@ -68,49 +69,6 @@ Arayüz Pico.css ile sade tutuldu. Router tek dosyadan (public/index.php) çalı
 * Vanilla JavaScript
 * Docker / docker-compose
 * (Opsiyonel) dompdf – PDF çıktısı için
-
----
-
-## Dizin Yapısı
-
-```
-.
-├─ app/
-│  ├─ bootstrap.php       # Oturum, helper, migrate çağrısı
-│  ├─ db.php              # SQLite migrate() ve bağlantı
-│  ├─ auth.php            # Kimlik doğrulama, rol kontrolü
-│  ├─ helpers.php         # render, redirect, csrf_field, money_fmt vb.
-│  └─ (opsiyonel) security.php
-├─ public/
-│  ├─ index.php           # Router (switch-case)
-│  ├─ .htaccess           # rewrite rules
-│  └─ assets/             # (İstersen CSS/JS dışa taşı)
-├─ views/
-│  ├─ layout/
-│  │  ├─ header.php
-│  │  └─ footer.php
-│  ├─ home.php
-│  ├─ trips/
-│  │  ├─ list.php
-│  │  └─ detail.php       # Koltuk haritası + kupon önizleme
-│  ├─ tickets/
-│  │  ├─ my.php
-│  │  ├─ show.php
-│  │  └─ print.php        # Yazdır görünümü (PDF alternatifi)
-│  ├─ firm/
-│  │  ├─ index.php        # Sefer CRUD
-│  │  ├─ tickets.php
-│  │  └─ coupons.php      # Kupon CRUD (firma bazlı)
-│  └─ admin/
-│     ├─ index.php
-│     └─ users.php        # Aktif/pasif
-├─ data/
-│  └─ app.sqlite          # Otomatik oluşur
-├─ Dockerfile
-├─ docker-compose.yml
-├─ composer.json          # (PDF istersen dompdf eklemek için)
-└─ README.md
-```
 
 ---
 
@@ -334,6 +292,52 @@ Yanıt alanları:
 * **SQLite yazma izni**
   `data/` dizini web sunucusu kullanıcısı tarafından yazılabilir olmalı.
 
+---
+## Uygulama İçi Görüntüler
+
+
+---
+
+## Dizin Yapısı
+
+```
+.
+├─ app/
+│  ├─ bootstrap.php       # Oturum, helper, migrate çağrısı
+│  ├─ db.php              # SQLite migrate() ve bağlantı
+│  ├─ auth.php            # Kimlik doğrulama, rol kontrolü
+│  ├─ helpers.php         # render, redirect, csrf_field, money_fmt vb.
+│  └─ (opsiyonel) security.php
+├─ public/
+│  ├─ index.php           # Router (switch-case)
+│  ├─ .htaccess           # rewrite rules
+│  └─ assets/             # (İstersen CSS/JS dışa taşı)
+├─ views/
+│  ├─ layout/
+│  │  ├─ header.php
+│  │  └─ footer.php
+│  ├─ home.php
+│  ├─ trips/
+│  │  ├─ list.php
+│  │  └─ detail.php       # Koltuk haritası + kupon önizleme
+│  ├─ tickets/
+│  │  ├─ my.php
+│  │  ├─ show.php
+│  │  └─ print.php        # Yazdır görünümü (PDF alternatifi)
+│  ├─ firm/
+│  │  ├─ index.php        # Sefer CRUD
+│  │  ├─ tickets.php
+│  │  └─ coupons.php      # Kupon CRUD (firma bazlı)
+│  └─ admin/
+│     ├─ index.php
+│     └─ users.php        # Aktif/pasif
+├─ data/
+│  └─ app.sqlite          # Otomatik oluşur
+├─ Dockerfile
+├─ docker-compose.yml
+├─ composer.json          # (PDF istersen dompdf eklemek için)
+└─ README.md
+```
 ---
 
 ## Lisans
