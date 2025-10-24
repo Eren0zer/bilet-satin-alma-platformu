@@ -1,0 +1,5 @@
+<h2>Sefer Ara</h2>
+<form method="get" action="index.php"><input type="hidden" name="r" value="home"><div class="grid"><input type="text" name="q" placeholder="Kalkış / Varış" value="<?= e($q ?? '') ?>"><input type="date" name="date" value="<?= e($date ?? '') ?>"><button type="submit">Listele</button></div></form>
+<h3>Seferler</h3><table><thead><tr><th>Firma</th><th>Güzergâh</th><th>Tarih</th><th>Saat</th><th>Fiyat</th><th></th></tr></thead><tbody>
+<?php foreach($trips as $t):?><tr><td><?= e($t['firm_name']) ?></td><td><?= e($t['origin']) ?> → <?= e($t['destination']) ?></td><td><?= e($t['trip_date']) ?></td><td><?= e($t['departure_time']) ?></td><td><?= e(money_fmt($t['price'])) ?></td><td><a href="index.php?r=trip&id=<?= (int)$t['id'] ?>">Detay</a></td></tr><?php endforeach;?>
+<?php if(!$trips):?><tr><td colspan="6">Sefer bulunamadı.</td></tr><?php endif;?></tbody></table>

@@ -1,0 +1,1 @@
+</main><footer class="container"><small><?= e(date('Y')) ?> • Basit XAMPP + SQLite bilet sistemi Eren Özer</small></footer></body></html>
