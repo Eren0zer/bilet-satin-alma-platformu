@@ -294,6 +294,45 @@ Yanıt alanları:
 
 ---
 ## Uygulama İçi Görüntüler
+<!-- Ekran görüntüleri – 2 sıra x 4 sütun (yolları gerekirse değiştirin) -->
+<table>
+  <tr>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Ana_ekran.png" alt="Ana ekran" width="220"><br>
+      <sub><b>Ana ekran</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Bilet_ekrani.png" alt="Bilet ekranı" width="220"><br>
+      <sub><b>Bilet ekranı</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Firma_paneli.png" alt="Firma paneli" width="220"><br>
+      <sub><b>Firma paneli</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Firmaya_ait_biletler.png" alt="Firmaya ait biletler" width="220"><br>
+      <sub><b>Firmaya ait biletler</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Kupon.png" alt="Kupon" width="220"><br>
+      <sub><b>Kupon</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Kupon_listesi.png" alt="Kupon listesi" width="220"><br>
+      <sub><b>Kupon listesi</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Admin_paneli.png" alt="Admin paneli" width="220"><br>
+      <sub><b>Admin paneli</b></sub>
+    </td>
+    <td align="center" style="padding:8px">
+      <img src="docs/screenshots/Kullanici_yonetimi.png" alt="Kullanıcı yönetimi" width="220"><br>
+      <sub><b>Kullanıcı yönetimi</b></sub>
+    </td>
+  </tr>
+</table>
 
 
 ---
