@@ -1,7 +1,3 @@
-Aşağıdaki metni doğrudan `README.md` olarak kullanabilirsin. XAMPP ve Docker kurulum adımları, proje mimarisi, roller, veri modeli, eklediğin ilave özellikler ve sorun giderme dahil **çok detaylı** hazırlanmıştır.
-
----
-
 # Bilet Satın Alma Platformu
 
 Basit, hızlı ve anlaşılır bir PHP (PDO + SQLite) uygulaması. Yolcular sefer arar, koltuk seçer, kupon uygular ve cüzdan bakiyesiyle bilet satın alır.
